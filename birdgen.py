@@ -1,4 +1,5 @@
 import random
+from PIL import Image
 
 def main():
 	
@@ -81,13 +82,14 @@ def main():
 		for i in range(1,10):
 			print("- " +(random.choice(names)) + "'s " + (random.choice(colors)) + " " + (random.choice(species)))
 				
-	#selection = int(return input())	
 
-	#print("Hit ENTER to generate NEW BIRDS!!")
 	print("CHECK OUT THESE SWEET NEW BIRDS!!!")
 	makeBird(colors, parts, species)
 	print(" ")
 	print("CHECK OUT THESE OTHER AND EQUALLY SWEET NEW BIRDS!!!")
 	nameBird(names, colors, species)
+	
+	img = Image.open('tstbird.jpg')
+	img.show()
 	
 main()
