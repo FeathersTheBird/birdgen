@@ -12,23 +12,25 @@ def main():
 	f = open('birdgen.txt','a')
 	
 	colors = [
-		#"Iridescent",
 		"White",
-		#"Pale",
-		#"Rainbow",
 		"Red",
-		#"Rosy",
+		"Crimson",
+		"Mistyrose",
+		"Pink",
 		"Orange",
-		#"Sunny",
 		"Yellow",
-		#"Golden",
+		"Gold",
 		"Green",
-		#"Verdant",
+		"Olive",
+		"Teal",
 		"Blue",
-		#"Aqua",
-		#"Steel",
-		#"Indigo",
-		"Violet"
+		"Aqua",
+		"Steelblue",
+		"Indigo",
+		"Violet",
+		"Maroon",
+		"Brown",
+		"Sienna"
 	]
 	
 	parts = [
@@ -37,7 +39,7 @@ def main():
 		#"-cheeked",
 		#"-breasted",
 		#"-footed",
-		"-eyed",
+		#"-eyed",
 		#"-tailed",
 		#"-winged",
 		#"-crested",
@@ -47,13 +49,13 @@ def main():
 	]
 		
 	species = [
-		#"Hawk",
+		"Hawk",
 		"Eagle",
-		#"Finch",
-		#"Swallow",
-		#"Duck",
+		#/"Finch",
+		#/"Swallow",
+		#/"Duck",
 		"Conure",
-		#"Dove",
+		#/"Dove",
 		"Ibis",
 		"Owl"
 	]
@@ -76,6 +78,10 @@ def main():
 	col = random.choice(colors)
 	prt = random.choice(parts)
 	nme = random.choice(names)
+	
+	chance = (random.randint(1,100))
+	if chance <= 5:
+		spe = "Furby"
 	
 	anname = str(col + prt + " " + spe)
 
