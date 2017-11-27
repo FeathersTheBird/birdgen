@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>BirdGen</title>
+	<script src="https://unpkg.com/vue"></script>
 	<meta name="author" content="Hayley Morin">
 	<link rel="icon" href="img/favicon.png">
 <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
@@ -42,11 +43,12 @@ img		{
 	
 .bordered	{
 	border-style: dashed;
-	border-color: pink;
+	border-color: thistle;
 	background-color: #F3D9E9;
 	border-size: 10px;
 	border-radius: 25px;
 	color: #B36DC8;
+	line-height: 10px;
 	overflow: hidden;
 	}
 
@@ -59,6 +61,39 @@ img		{
     height: 1000px; 
     overflow: hidden; 
 	}
+	
+.footer {
+	margin-top: 25px;
+	border-style: dashed;
+	border-color: thistle;
+	border-radius: 25px;
+    background: #F3D9E9;
+    padding: 20px; 
+    width: 950px; 
+    color: #B36DC8;
+    font-size: 15px;
+    line-height: 7px;
+    overflow: hidden;
+}
+
+.footer img		{
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+	transition-property: transform;
+	overflow: hidden;
+	}
+
+.footer img:hover		{
+	-webkit-transform:rotate(-360deg);
+	-moz-transform:rotate(-360deg); 
+	-o-transform:rotate(-360deg);
+}
+
 </style>
 </head>
 <body>
@@ -72,10 +107,21 @@ img		{
 		<h1>BIRDGEN</h1>
 		<div class="bordered">
 			<p>A fun little program that creates birds!</p>
-			<p>Generate as many as you want and save them as you wish.</p>
+			<p><img src="img/90s.gif" alt="90sbird" width="80" height="80" style="float: left"/> Generate as many as you want and save them as you wish. <img src="img/90s.gif" alt="90sbird" width="80" height="80" style="float: right"/></p>
+			<p>Written in Python 3.4 & the magic of the Pillow library.</p>
 		</div>
 		<div class="pythonbit">
 			<p>MAKE-A-BIRD</p>
+		</div>
+		<div class="footer">
+			<p> </p>
+			<p><img src="img/90s.gif" alt="90sbird" style="float: left"/> How's the website? Feeling a little 90s? <img src="img/90s.gif" alt="90sbird" style="float: right"/></p>
+			<p>Art & Development: Hayley Morin</p>
+			<p>Email: hsmorin@me.com</p>
+			<p>Discord: legaleaglefeathers #9303</p>
+			<p>Phone: None of your business</p>
+			<p>(Pictured: Dot, the BirdGen mascot, a "Violet Spotted Hawk".)</p>
+			<p>(She also appears as the favicon!)</p>
 		</div>
 	</div>
 </body>
