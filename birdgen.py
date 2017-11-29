@@ -53,7 +53,7 @@ def main():
 		"Eagle",
 		#/"Finch",
 		#/"Swallow",
-		#/"Duck",
+		"Duck",
 		"Conure",
 		#/"Dove",
 		"Ibis",
