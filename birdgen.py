@@ -55,7 +55,7 @@ def main():
 		#/"Swallow",
 		"Duck",
 		"Conure",
-		#/"Dove",
+		"Dove",
 		"Ibis",
 		"Owl"
 	]
